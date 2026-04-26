@@ -1,1 +1,23 @@
-<p>konverterare works!</p>
+<div class="container">
+
+<h2>Konverterare</h2>
+
+<h3>Meter ↔ Feet</h3>
+
+<input type="number" [(ngModel)]="meter" placeholder="Meter">
+<button (click)="meterToFeet()">→ Feet</button>
+
+<input type="number" [(ngModel)]="feet" placeholder="Feet">
+<button (click)="feetToMeter()">→ Meter</button>
+
+<hr>
+
+<h3>Celsius ↔ Fahrenheit</h3>
+
+<input type="number" [(ngModel)]="celsius" placeholder="Celsius">
+<button (click)="celsiusToFahrenheit()">→ Fahrenheit</button>
+
+<input type="number" [(ngModel)]="fahrenheit" placeholder="Fahrenheit">
+<button (click)="fahrenheitToCelsius()">→ Celsius</button>
+
+</div>
