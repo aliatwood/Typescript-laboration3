@@ -1,23 +1,31 @@
 <div class="container">
+  <h2>Konverterare</h2>
 
-<h2>Konverterare</h2>
+  <h3>Meter ↔ Feet</h3>
+  <div class="pair">
+    <input type="number" [(ngModel)]="meter" placeholder="Meter">
+    <button (click)="meterToFeet()">→ Feet</button>
+  </div>
+  <p class="result" *ngIf="feetResult">{{ feetResult }} feet</p>
 
-<h3>Meter ↔ Feet</h3>
+  <div class="pair">
+    <input type="number" [(ngModel)]="feet" placeholder="Feet">
+    <button (click)="feetToMeter()">→ Meter</button>
+  </div>
+  <p class="result" *ngIf="meterResult">{{ meterResult }} meter</p>
 
-<input type="number" [(ngModel)]="meter" placeholder="Meter">
-<button (click)="meterToFeet()">→ Feet</button>
+  <hr>
 
-<input type="number" [(ngModel)]="feet" placeholder="Feet">
-<button (click)="feetToMeter()">→ Meter</button>
+  <h3>Celsius ↔ Fahrenheit</h3>
+  <div class="pair">
+    <input type="number" [(ngModel)]="celsius" placeholder="Celsius">
+    <button (click)="celsiusToFahrenheit()">→ Fahrenheit</button>
+  </div>
+  <p class="result" *ngIf="fahrenheitResult">{{ fahrenheitResult }} °F</p>
 
-<hr>
-
-<h3>Celsius ↔ Fahrenheit</h3>
-
-<input type="number" [(ngModel)]="celsius" placeholder="Celsius">
-<button (click)="celsiusToFahrenheit()">→ Fahrenheit</button>
-
-<input type="number" [(ngModel)]="fahrenheit" placeholder="Fahrenheit">
-<button (click)="fahrenheitToCelsius()">→ Celsius</button>
-
+  <div class="pair">
+    <input type="number" [(ngModel)]="fahrenheit" placeholder="Fahrenheit">
+    <button (click)="fahrenheitToCelsius()">→ Celsius</button>
+  </div>
+  <p class="result" *ngIf="celsiusResult">{{ celsiusResult }} °C</p>
 </div>
