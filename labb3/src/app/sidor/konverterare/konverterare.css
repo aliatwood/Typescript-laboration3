@@ -1,69 +1,64 @@
-:host {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-}
-
-.container {
-  text-align: center;
-  max-width: 400px;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
 h2 {
+  text-align: center;
   margin-bottom: 20px;
-  color: #222;
 }
 
 h3 {
-  color: #444;
-  margin-bottom: 12px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.pair {
+.section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.row {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  margin-bottom: 8px;
+
+  margin: 12px 0;
 }
 
-.pair input {
+input {
   padding: 10px;
-  width: 140px;
+  width: 160px;
+
   border: 1px solid #ccc;
   border-radius: 6px;
+
   font-size: 14px;
 }
 
-.pair button {
+button {
   padding: 10px 14px;
+
   border: none;
-  background: #1976d2;
-  color: white;
   border-radius: 6px;
+
+  background-color: #4a6cf7;
+  color: white;
+
   cursor: pointer;
-  font-size: 14px;
-  white-space: nowrap;
+  transition: 0.2s ease;
 }
 
-.pair button:hover {
-  background: #125aa0;
-}
-
-.result {
-  font-size: 16px;
-  color: #1976d2;
-  font-weight: bold;
-  margin-bottom: 16px;
+button:hover {
+  background-color: #3657d6;
 }
 
 hr {
-  margin: 25px auto;
-  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
   border: none;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
 }
